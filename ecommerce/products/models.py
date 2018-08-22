@@ -30,7 +30,7 @@ class Product(models.Model):
     desciption = models.CharField(max_length=120)
     price = models.DecimalField(max_digits=5, decimal_places=4, default=0.00000)
     cant = models.IntegerField()
-    image = models.FileField(blank=True, null=True, upload_to='documents/%Y/%m/%d')
+    image = models.FileField(blank=True, null=True, upload_to=upload_image_path)
 
     def __unicode__(self):
         return self.title

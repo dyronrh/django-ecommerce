@@ -1,8 +1,6 @@
 {% extends 'base/base.html' %}
 {% block content %}
 {% include 'base/header.html' %}
-
-<h2>bloque dos</h2>
 {% for object in objects %}
 <h1>{object.title}</h1>
 {% endfor %}
